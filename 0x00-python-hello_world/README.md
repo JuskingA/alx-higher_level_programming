@@ -1,4 +1,1 @@
-# Synopsis
-
-Learning more about Python.
-
+python-programming
