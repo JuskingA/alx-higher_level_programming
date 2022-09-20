@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for l in reversed(range(ord('a'), ord('z') + 1)):
-    print("{}".format(chr(l - 32) if l % 2 != 0 else chr(l)), end="")
+for i in range(122, 96, -1):  # ASSCI code in reverse for lowercase
+    if i % 2:
+        i -= 32
+    print("{:c}".format(i), end="")
