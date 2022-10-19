@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-def magic_string(list_print=[]):
-    list_print += ["Holberton"]
-    return (", ".join(list_print))
+def magic_string():
+    setattr(magic_string, "n", getattr(magic_string, "n", 0) + 1)
+    return ("BestSchool, " * getattr(magic_string, "n", 0))[:-2]
