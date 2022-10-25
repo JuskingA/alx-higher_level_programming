@@ -1,18 +1,27 @@
 #!/usr/bin/python3
-'''
-    Class that takes an integers
-'''
+"""Module for class MyInt"""
 
 
 class MyInt(int):
-    def __init__(self, number):
-        self.number = number
+    """class MyInt swaps == and !="""
+    def __eq__(self, other):
+        """Swap == with !=
 
-    def __ne__(self, val):
-        return (self.number == val)
+        Args:
+            other: object to compare
 
-    def __eq__(self, val):
-        return (self.number != val)
+        Returns: True if value and self are differents
+                False in otherwise
+        """
+        return super().__ne__(other)
 
-    def __str__(self):
-        return (str(self.number))
+    def __ne__(self, other):
+        """Swap != with ==
+
+        Args:
+            other: object to compare
+
+        Returns: False if value and self are iqual
+                True in otherwise
+        """
+        return super().__eq__(other)

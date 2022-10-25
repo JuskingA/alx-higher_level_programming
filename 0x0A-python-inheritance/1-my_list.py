@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-
-'''
-    Inherits  from a list
-'''
+"""Module for class MyList"""
 
 
 class MyList(list):
-    '''
-        Prints a sorted list without changing the original
-    '''
+    """class MyList that inherits from list"""
+
     def print_sorted(self):
+        """Method for print sorted list"""
         print(sorted(self))
