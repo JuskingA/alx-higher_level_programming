@@ -2,10 +2,10 @@
 import os
 import sys
 
-Student = __import__('13-student').Student
+Student = __import__('11-student').Student
 read_file = __import__('0-read_file').read_file
-save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 path = sys.argv[1]
 
@@ -30,7 +30,8 @@ print("Fake student:")
 new_student_1 = Student("Fake", "Fake", 89)
 print(new_student_1)
 print(type(new_student_1))
-print("{} {} {}".format(new_student_1.first_name, new_student_1.last_name, new_student_1.age))
+print("{} {} {}".format(new_student_1.first_name,
+      new_student_1.last_name, new_student_1.age))
 
 
 print("Load dictionary from file:")
@@ -39,4 +40,5 @@ new_j_student_1 = load_from_json_file(path)
 new_student_1.reload_from_json(j_student_1)
 print(new_student_1)
 print(type(new_student_1))
-print("{} {} {}".format(new_student_1.first_name, new_student_1.last_name, new_student_1.age))
+print("{} {} {}".format(new_student_1.first_name,
+      new_student_1.last_name, new_student_1.age))

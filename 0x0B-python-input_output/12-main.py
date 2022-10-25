@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-14-main
+12-main
 """
-pascal_triangle = __import__('14-pascal_triangle').pascal_triangle
+pascal_triangle = __import__('12-pascal_triangle').pascal_triangle
+
 
 def print_triangle(triangle):
     """
@@ -13,4 +14,4 @@ def print_triangle(triangle):
 
 
 if __name__ == "__main__":
-    print_triangle(pascal_triangle(0))
+    print_triangle(pascal_triangle(5))
