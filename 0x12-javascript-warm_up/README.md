@@ -1,1 +1,1 @@
-# Exploring Javascript
+# Java-Script Warm Up
