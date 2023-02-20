@@ -1,5 +1,5 @@
 const $ = window.$;
-const url = 'https://fourtonfish.com/hellosalut/?lang=';
+const url = 'https://www.fourtonfish.com/hellosalut/hello/';
 $(this).ready(function () {
   $('INPUT#btn_translate').on('click', function () {
     $.getJSON(url + $('INPUT#language_code').val(), function (data) {
